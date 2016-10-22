@@ -16,9 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Text2: UITextField!
     
+    @IBOutlet weak var Text3: UITextField!
+    
     @IBAction func buttonTapped(_ sender: AnyObject)
     {
-       theLabel.text = String(Double(Text1.text!)! + Double(Text2.text!)!)
+        theLabel.text = "See you in \(Int (Text1.text!)! + Int (Text2.text!)! + Int (Text3.text!)!) days"
 
     }
     override func viewDidLoad() {

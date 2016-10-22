@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDf-YW-ScE">
-                                <state key="normal" title="Click me if u dare"/>
+                                <state key="normal" title="How many more days till we meet?"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUf-hk-UtX"/>
                                 </connections>
@@ -45,6 +45,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVv-gF-KIs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hkw-HF-jp8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-bQ-STN">
+                                <frame key="frameInset" minX="264" minY="215" width="31" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-gI-NPX">
+                                <frame key="frameInset" minX="264" minY="262" width="31" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-kv-Ea3">
+                                <frame key="frameInset" minX="267" minY="168" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,7 +83,9 @@
                             <constraint firstItem="zDf-YW-ScE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dct-ey-XY4"/>
                             <constraint firstItem="vGv-Wq-b16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KnR-2i-c11"/>
                             <constraint firstItem="vGv-Wq-b16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OGk-BN-Jfb"/>
+                            <constraint firstItem="LVv-gF-KIs" firstAttribute="top" secondItem="vGv-Wq-b16" secondAttribute="bottom" constant="17" id="c1a-HK-ejt"/>
                             <constraint firstItem="vGv-Wq-b16" firstAttribute="top" secondItem="lo9-7s-rpl" secondAttribute="bottom" constant="17" id="eQW-Is-jPp"/>
+                            <constraint firstItem="LVv-gF-KIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fJc-1o-lvc"/>
                             <constraint firstItem="lo9-7s-rpl" firstAttribute="top" secondItem="zDf-YW-ScE" secondAttribute="bottom" constant="38" id="fl5-18-fYi"/>
                             <constraint firstItem="lo9-7s-rpl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rmX-Xn-qOm"/>
                         </constraints>
@@ -62,6 +93,7 @@
                     <connections>
                         <outlet property="Text1" destination="lo9-7s-rpl" id="mbE-wm-abF"/>
                         <outlet property="Text2" destination="vGv-Wq-b16" id="c6Q-Dh-Fzj"/>
+                        <outlet property="Text3" destination="LVv-gF-KIs" id="d4k-qN-5dT"/>
                         <outlet property="theLabel" destination="PvN-DZ-V6t" id="Idi-hP-I5d"/>
                     </connections>
                 </viewController>
