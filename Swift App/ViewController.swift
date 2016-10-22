@@ -12,10 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: AnyObject)
     {
-        theLabel.text = "I love u"
-        print("button tapped")
+       theLabel.text = String(Double(Text1.text!)! + Double(Text2.text!)!)
 
     }
     override func viewDidLoad() {
